@@ -1,0 +1,26 @@
+{
+  "name": "@repo/drizzle",
+  "version": "0.0.0",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "scripts": {
+    "generate": "npx drizzle-kit generate",
+    "push": "npx drizzle-kit push",
+    "studio": "npx drizzle-kit studio",
+    "migrate": "npx drizzle-kit migrate"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^0.10.1",
+    "@repo/env": "workspace:*",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "22.8.7",
+    "@types/pg": "^8.11.10",
+    "drizzle-kit": "^0.27.1",
+    "drizzle-orm": "^0.36.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}
